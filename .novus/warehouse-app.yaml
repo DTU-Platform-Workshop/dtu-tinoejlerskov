@@ -1,0 +1,22 @@
+apiVersion: novus.legogroup.io/v1alpha1
+kind: WebApp
+metadata:
+  name: warehouse-app
+spec:
+  ingress:
+    subdomain: warehouse-app
+  service:
+    image:
+      # Make sure to update these values:
+      repository: ghcr.io/dtu-platform-workshop/dtu-tinoejlerskov/warehouse-app
+      tag: 20260921-6c04837
+
+    useSamePortForHealthProbes: true
+
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+      requests:
+        cpu: 50m
+        memory: 64Mi
