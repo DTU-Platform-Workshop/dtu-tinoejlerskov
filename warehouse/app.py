@@ -2,13 +2,13 @@ import signal
 import sys
 import os
 
-from fastapi import FastAPI, Body
+from fastapi import FastAPI
 from contextlib import asynccontextmanager
 from opentelemetry import trace
 
 from telemetry import instrument_app, setup_tracer
 
-setup_tracer("warehouse")
+setup_tracer("otel-app")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
