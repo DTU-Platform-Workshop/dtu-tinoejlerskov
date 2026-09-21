@@ -11,7 +11,7 @@ spec:
     image:
       # Make sure to update these values:
       repository: ghcr.io/dtu-platform-workshop/dtu-tinoejlerskov/warehouse
-      tag: 20260921-6c04837
+      tag: 20260921-7a98548
 
     useSamePortForHealthProbes: true
 
