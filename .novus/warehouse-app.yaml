@@ -2,6 +2,8 @@ apiVersion: novus.legogroup.io/v1alpha1
 kind: WebApp
 metadata:
   name: warehouse-app
+  labels:
+    novus.legogroup.io/app-id: warehouse-app
 spec:
   ingress:
     subdomain: warehouse-app

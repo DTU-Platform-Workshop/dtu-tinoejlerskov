@@ -2,7 +2,7 @@ import signal
 import sys
 import os
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 from contextlib import asynccontextmanager
 from opentelemetry import trace
 
