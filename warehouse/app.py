@@ -8,7 +8,7 @@ from opentelemetry import trace
 
 from telemetry import instrument_app, setup_tracer
 
-setup_tracer("warehouse-app")
+setup_tracer("warehouse")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):

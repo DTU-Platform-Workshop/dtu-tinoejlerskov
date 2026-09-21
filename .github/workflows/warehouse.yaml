@@ -4,10 +4,10 @@ on:
     branches: [main]
     paths:
       - warehouse/**
-      - .github/workflows/warehouse-app.yaml
+      - .github/workflows/warehouse.yaml
 
 env:
-  IMAGE: warehouse-app
+  IMAGE: warehouse
   CONTEXT: warehouse
 
 jobs:

@@ -1,17 +1,17 @@
 apiVersion: novus.legogroup.io/v1alpha1
 kind: WebApp
 metadata:
-  name: warehouse-app
+  name: warehouse
   labels:
     novus.legogroup.io/app-id: warehouse-app
 spec:
   ingress:
-    subdomain: warehouse-app
+    subdomain: warehouse
   service:
     image:
       # Make sure to update these values:
-      repository: ghcr.io/dtu-platform-workshop/dtu-tinoejlerskov/warehouse-app
-      tag: 20260921-8c02c4d
+      repository: ghcr.io/dtu-platform-workshop/dtu-tinoejlerskov/warehouse
+      tag: 20260921-6c04837
 
     useSamePortForHealthProbes: true
 
