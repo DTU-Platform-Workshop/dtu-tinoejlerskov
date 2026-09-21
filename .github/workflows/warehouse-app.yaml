@@ -3,12 +3,12 @@ on:
   push:
     branches: [main]
     paths:
-      - first-app/**
+      - warehouse/**
       - .github/workflows/warehouse-app.yaml
 
 env:
   IMAGE: warehouse-app
-  CONTEXT: warehouse-app
+  CONTEXT: warehouse
 
 jobs:
   build-push:
