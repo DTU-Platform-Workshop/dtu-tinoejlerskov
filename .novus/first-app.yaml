@@ -11,8 +11,7 @@ spec:
       repository: ghcr.io/dtu-platform-workshop/dtu-tinoejlerskov/first-app 
       # NOTICE: Update this line to whatever tag you see when you find it 
       # under the "Packages" in your repository 
-      tag: 20260919-6cf019c
-
+      tag: 20260921-96d7346
     useSamePortForHealthProbes: true
 
     resources:
